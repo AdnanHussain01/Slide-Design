@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <title>SLIDER DESIGN</title>
+</head>
+<body>
+    <div class="container">
+<div class="swiper">
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide"><img src="https://wallpaperaccess.com/full/13661.jpg" ></div>
+      <div class="swiper-slide"><img src="https://wallpaperaccess.com/full/13644.jpg" ></div>
+      <div class="swiper-slide"><img src="https://c4.wallpaperflare.com/wallpaper/787/18/502/cars-hd-widescreen-high-quality-desktop-wallpaper-preview.jpg" ></div>
+      <div class="swiper-slide"><img src="https://wallpaperaccess.com/full/13652.jpg" ></div>
+      <div class="swiper-slide"><img src="https://wallpapercave.com/wp/wp3885710.jpg" ></div>
+      <div class="swiper-slide"><img src="https://c4.wallpaperflare.com/wallpaper/254/447/824/2019-cars-4k-dodge-challenger-srt-hellcat-wallpaper-preview.jpg" ></div>
+      <div class="swiper-slide"><img src="https://wallpaperaccess.com/full/1469944.jpg" ></div>
+      <div class="swiper-slide"><img src="https://wallpapercave.com/wp/wp8703082.jpg"></div>
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+  
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
+</div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+    const swiper = new Swiper('.swiper', {
+        autoplay: {
+            delay : 3000,
+            disableOnInteraction: false
+        },
+  loop: true,
+
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
+    </script>
+</body>
+</html>
